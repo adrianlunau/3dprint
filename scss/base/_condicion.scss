@@ -1,0 +1,23 @@
+@mixin condicion ($colorif) {
+    background-color: $colorif;
+
+    @if $colorif == gray {
+        
+        background-color: lightgray;
+        color: gray;
+        padding: 4px;
+    } @else {
+        background-color: black;
+        color: white;
+        padding: 4px;
+    }
+
+}
+
+.text-category1{
+    @include condicion(gray);
+}
+
+.text-category2{
+    @include condicion(blue);
+}

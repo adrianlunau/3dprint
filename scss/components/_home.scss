@@ -1,0 +1,18 @@
+#home{
+    
+    .container-home{
+        position: relative;
+        .container-text{
+            position: absolute;
+            z-index: 100;
+            color: white;
+            bottom: 15px;
+            right: 30px;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            margin-bottom: 20px;
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    }
+}

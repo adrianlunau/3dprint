@@ -1,0 +1,28 @@
+$info-contacto: (
+    direccion: normal,
+    telefono: bold,
+    mail: italic,
+    
+
+);
+
+.contacto{
+    div{
+        ul{
+            li{
+                list-style: none;
+            }
+            li.dire{
+                font-style: map-get($info-contacto, direccion);
+            }
+            li.fono{
+                font-weight: map-get($info-contacto, telefono);
+            }
+            li.mail{
+                font-style: map-get($info-contacto, mail);
+            }
+        }
+    }
+}
+
+

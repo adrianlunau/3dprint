@@ -1,0 +1,56 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 2px solid gray;
+    padding-top: 20px;
+
+    @media (max-width: 576px){
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    div{
+        ul{
+            display: flex;
+            justify-items: flex-start;
+            list-style: none;
+
+            @media (max-width: 576px){
+                display: block;
+                text-align: start;
+            }
+            li{
+                margin: 5px 20px;
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    &:hover{
+                        color: gray;
+                    }
+                }
+                img{
+                    width: 15px;
+                }
+            }
+        }
+    }
+
+
+
+    .volver-inicio{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            text-decoration: none;
+            color: gray;
+            
+
+        }
+        
+        
+    }
+    
+    
+}

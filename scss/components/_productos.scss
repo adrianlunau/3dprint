@@ -1,0 +1,34 @@
+.seccion-productos{
+    .contenedor-grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .contenedor-producto{
+            width: 30%;
+            min-width: 350px;
+            margin: 10px;
+
+            // Transformaciones
+
+            &:hover{
+                transform: scale(1.2, 1.2);
+                position: relative;
+                z-index: 100;
+    
+                transition: all 1s;
+            }
+
+            
+            img{
+                width: 100%;
+            }
+
+            h4{
+                text-align: center;
+
+
+            }
+        }
+    }
+}
