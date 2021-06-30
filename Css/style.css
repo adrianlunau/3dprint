@@ -143,6 +143,9 @@ footer .volver-inicio a {
   margin-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
+#home .container-home .container-text :hover {
+  background-color: black;
+}
 
 h2 {
   letter-spacing: 10px;
