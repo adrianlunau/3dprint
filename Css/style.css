@@ -1,46 +1,87 @@
-header div {
+header {
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+}
+header .container-nav {
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
-header div nav {
+header .container-nav .icon-menu {
+  display: none;
+  cursor: pointer;
+  color: black;
+  font-size: 28px;
+}
+header #menu-bar {
+  display: none;
+}
+header nav ul {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 600px;
 }
-header div nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-}
-@media (max-width: 576px) {
-  header div nav ul {
-    display: block;
-    text-align: center;
-  }
-}
-header div nav ul li {
+header nav ul li a {
   text-decoration: none;
-  padding: 5px 20px;
+  color: black;
 }
-@media (max-width: 576px) {
-  header div nav ul li {
+header nav ul li a:hover {
+  color: #4498b4;
+}
+@media (max-width: 900px) {
+  header .container-nav .icon-menu {
     display: block;
-    text-align: center;
+    margin: 10px;
+    padding: 10px;
   }
-}
-header div nav ul li a {
-  color: gray;
-  text-decoration: none;
-}
-header div nav ul li a:hover {
-  color: orange;
+  header .container-nav .menu {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 120px;
+    background-color: rgba(51, 51, 51, 0.95);
+    width: 100%;
+    height: 80vh;
+    z-index: 190;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+  }
+  header .container-nav .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+  }
+  header .container-nav .menu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid white;
+  }
+  header .container-nav .menu ul li a {
+    color: white;
+  }
+  header .container-nav .contenedor-logo {
+    width: 150px;
+    margin-left: 10px;
+  }
+  header #menu-bar:checked ~ .menu {
+    transform: translateX(0);
+  }
 }
 
 .contenedor-logo {
   width: 200px;
-  margin: 50px auto;
 }
 .contenedor-logo img {
   width: 100%;
@@ -146,6 +187,34 @@ footer .volver-inicio a {
 #home .container-home .container-text :hover {
   background-color: black;
 }
+@media (max-width: 900px) {
+  #home .container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #home .container-home .container-text {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: black;
+    background-color: white;
+  }
+  #home .container-home .container-text h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  #home .container-home .container-text h3 {
+    font-size: 1em;
+    color: #7c7c7c;
+    text-align: center;
+  }
+}
 
 h2 {
   letter-spacing: 10px;
@@ -182,7 +251,21 @@ h2 {
   font-style: italic;
 }
 
-@media (max-width: 576px) {
+.contenedor-contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.contenedor-contacto .datos-contacto ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.contenedor-contacto .datos-contacto ul li {
+  text-align: end;
+  margin: 10px 0;
+}
+@media (max-width: 900px) {
   .contenedor-contacto {
     display: block;
     width: 100%;

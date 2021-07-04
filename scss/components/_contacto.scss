@@ -1,5 +1,24 @@
 .contenedor-contacto{
-    @media (max-width: 576px){
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    .datos-contacto ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        
+        li {
+            text-align: end;
+            margin: 10px 0;
+        }
+    }
+    
+
+
+    @media (max-width: 900px){
                 display: block;
                 width: 100%;
             }

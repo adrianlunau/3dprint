@@ -20,4 +20,35 @@
         
 
     }
+    @media (max-width: 900px){
+        .container-home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+
+            .container-text {
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                color: black;
+                background-color: white;
+                
+                h1 {
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+                h3 {
+                    font-size: 1em;
+                    color: rgb(124, 124, 124);
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

@@ -35,31 +35,24 @@
     <header>
 
         <!-- NavBAr  -->
-        <div class="container-na">
+        <div class="container-nav">
 
           <div class="contenedor-logo"><img src="Images/logo 3dprint.png" alt=""></div>
          
-          <nav class="container">
-            <ul>
-              <li>
-                <a class="item-navba" href="#home">Inicio</a>
-              </li>
-              <li>
-                <a class="item-navba" href="#servicios">Servicios</a>
-              </li>
-              <li>
-                <a class="item-navba" href="#productos">Productos</a>
-              </li>
-              <li>
-                <a class="item-navba" href="#nosotros">Nosotros</a>
-              </li>
-              <li>
-                <a class="item-navba" href="#contacto">Contacto</a>
-              </li>
-            
-            </ul>          
+          <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="icon-menu"><i class="fas fa-bars"></i></label>
+            <nav class="menu">
+                <ul>
+                    <li><a class="item-navba" href="#home">Inicio</a></li>
+                    <li><a class="item-navba" href="#servicios">Servicios</a></li>
+                    <li><a class="item-navba" href="#productos">Productos</a></li>
+                    <li><a class="item-navba" href="#nosotros">Nosotros</a></li>
+                    <li><a class="item-navba" href="#contacto">Contacto</a></li>
+                </ul>
 
-          </nav>
+            </nav>
+          
+          
 
           <!-- Fin Navbar -->
           
@@ -78,12 +71,14 @@
 
     <section id="home">
         
-        <div class="container-home container pb-3 align-items-end h-100">
+        <div class="container-home container pb-3 h-100">
+
+          <div class="container-text">
+            <h1 class="container">3D Print- Impresiones 3d</h1>
+            <h3 class="container">Soluciones en 3 dimensiones</h3>
+          </div>
           <div id="carouselExampleControls" class="carousel slide container pb-3" data-bs-ride="carousel">
-            <div class="container-text">
-              <h1 class="container">3D Print- Impresiones 3d</h1>
-              <h3 class="container">Soluciones en 3 dimensiones</h3>
-            </div>
+            
             
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -251,32 +246,37 @@
     <section class="container contacto" id="contacto">
       <h2>Contacto</h2>
 
-      <div class="contenedor-contacto  align-items-star ">
-      
-      
-
+      <div class="contenedor-contacto  align-items-star ">  
       
 
-      <div class="mt-5 mb-3">
-        <form action="/action_page.php">
-          <label for="fname">Nombre:</label><br>
-          <input type="text" id="fname" value=""><br><br>
-          <label for="fname">e-mail:</label><br>
-          <input type="text" id="fname" value=""><br><br>
-          <label for="fname">Mensaje:</label><br>
-          <input type="text" id="fname" style="width: 100%; height: 150px;" value=""><br><br>
-          <input type="submit" value="Submit">
+      
+
+      <div class="mt-5 mb-3 contacto-form">
+        <form action="enviar.php" method="POST" name="contact-form">
+          <label for="name">Nombre:</label><br>
+          <input type="text" id="name" name="nombre"><br><br>
+
+          <label for="mail">e-mail:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="asunto">Asunto:</label><br>
+          <input type="subject" id="asunto"  name="asunto"><br><br>
+
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea name="mensaje" id="mensaje" cols="50" rows="10"> </textarea>
+
+          <div><input type="submit" value="Enviar"></div>
         </form>
 
       </div>
 
         
 
-        <div>
+        <div class="datos-contacto">
           <ul>
-              <li class="dire">Direccion: Calle 1234 B° Barrio - Cordoba Capital</li>
-              <li class="fono">Telefonos: +54 9 (0351) - 156 123 456 / (0351) - 156 123 456</li>
-              <li class="mail">E-mail: consultas@3dimpresiones.com</li>
+              <li class="dire"><p>Direccion: Calle 1234 B° Barrio - Cordoba Capital</p> </li>
+              <li class="fono"><p>Telefonos: +54 9 (0351) - 156 123 456 / (0351) - 156 123 456</p></li>
+              <li class="mail"><p>E-mail: consultas@3dprint.com</p></li>
           </ul>
       
         
