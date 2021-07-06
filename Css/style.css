@@ -87,6 +87,41 @@ header nav ul li a:hover {
   width: 100%;
 }
 
+.contenedor-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contenedor-cards .card-individual {
+  width: 250px;
+  border: 2px solid #8a8a8a;
+  color: #8a8a8a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+.contenedor-cards .card-individual div {
+  margin-bottom: 20px;
+}
+.contenedor-cards .card-individual div img {
+  width: 90%;
+  margin-top: 5%;
+}
+.contenedor-cards .card-individual h3 {
+  font-weight: 700;
+}
+.contenedor-cards .card-individual a {
+  background-color: #8a8a8a;
+  width: 100px;
+  color: #ebebeb;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
 .seccion-productos .contenedor-grid {
   display: flex;
   flex-direction: row;
